@@ -6,7 +6,7 @@
 /*   By: msafflow <elegija4mlg@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/04 17:56:17 by msafflow          #+#    #+#             */
-/*   Updated: 2021/01/04 22:47:27 by msafflow         ###   ########.fr       */
+/*   Updated: 2021/01/04 22:51:32 by msafflow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ using   std::setw;
 using   std::cout;
 using   std::endl;
 
-Contact::Contact(void) {}
-Contact::~Contact(void) {}
+Contact::Contact(void){}
+Contact::~Contact(void){}
 
 void    Contact::print_field(string str) {
   if (str.length() > 10)

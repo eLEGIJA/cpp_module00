@@ -6,7 +6,7 @@
 /*   By: msafflow <elegija4mlg@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/03 17:28:51 by msafflow          #+#    #+#             */
-/*   Updated: 2021/01/04 22:49:38 by msafflow         ###   ########.fr       */
+/*   Updated: 2021/01/04 22:51:38 by msafflow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ Phonebook::Phonebook(void){
 	_amount = 0;
 }
 
-bool Phonebook::add_contact(Contact contact){
+bool	Phonebook::add_contact(Contact contact){
   if (_amount >= 8)
 	return false;
   _contacts[_amount] = contact;
@@ -29,7 +29,7 @@ bool Phonebook::add_contact(Contact contact){
   return true;
 }
 
-void Phonebook::print_selected_contact(int index){
+void	Phonebook::print_selected_contact(int index){
   if (index < 0 || index > 7 || index >= this->_amount) {
 	cout << "Sorry, this index is invalid." << endl;
 	return;
@@ -37,7 +37,7 @@ void Phonebook::print_selected_contact(int index){
   _contacts[index].print_all_contact_fields();
 }
 
-void Phonebook::print_list(void){
+void	Phonebook::print_list(void){
   cout << setw(10)  << "index"
 					<< "|"
 					<< "first name"

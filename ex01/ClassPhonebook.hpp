@@ -6,7 +6,7 @@
 /*   By: msafflow <elegija4mlg@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/03 17:15:11 by msafflow          #+#    #+#             */
-/*   Updated: 2021/01/04 22:16:00 by msafflow         ###   ########.fr       */
+/*   Updated: 2021/01/04 22:51:41 by msafflow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,9 @@ class   Phonebook{
 	public:
 		Phonebook();
 		~Phonebook();
-		bool	add_contact(Contact contact);
-		void	print_selected_contact(int index);
-		void	print_list(void);
+		bool		add_contact(Contact contact);
+		void		print_selected_contact(int index);
+		void		print_list(void);
 };
 
 #endif
