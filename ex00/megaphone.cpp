@@ -13,19 +13,24 @@
 #include <iostream>
 #include <string>
 
+using	std::cout;
+using	std::endl;
+using	std::string;
+using	std::toupper;
+
 int			main(int argc, char **argv)
 {
 	if (argc == 1)
-		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << std::endl;
+		cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << endl;
 	else
 	{
 		for (size_t i = 1; i < argc; i++)
 		{
-			std::string str (argv[i]);
+			string str (argv[i]);
 			for (size_t j = 0; j < str.length(); j++)
-				std::cout << (char)std::toupper(str[j]);
+				cout << (char)toupper(str[j]);
 		}
-		std::cout << std::endl;
+		cout << endl;
 	}
 	return (0);
 }
